@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+
+    --light-beige: hsl(30, 54%, 90%);
+    
+    --color-stone-100: hsl(30, 54%, 90%);
+    --color-stone-150: hsl(30, 18%, 87%);
+    --color-stone-600: hsl(30, 10%, 34%);
+    --color-stone-900: hsl(24, 5%, 18%);
+    
+    --color-brown-800: hsl(14, 45%, 36%);
+    
+    --color-rose-800: hsl(332, 51%, 32%);
+    --color-rose-50: hsl(330, 100%, 98%);
+  }  
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body{
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    line-height: 2;
+    padding: 5rem 0 5rem 0;
+}
+
+.card{
+    background-color: var(--color-white);
+    max-width: 30rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+
+hr{
+    border: .5px solid #ccc;
+    margin-top: 1.2rem;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.card-description{
+    font-size: 0.7rem;
+    color: var(--color-stone-600);
+    margin-bottom: 1rem;
+}
+
+h2{
+    color: var(--color-stone-900);
+}
+
+h2,h3{
+    padding-bottom: 1rem;
+    font-family: "Young Serif", sans-serif;
+}
+
+h3{
+    color: var(--color-brown-800);
+}
+
+li{
+    margin:0;
+    font-size: 0.7rem;
+    color: var(--color-stone-600);
+}
+
+.preparation{
+    background-color: var(--color-rose-50);
+    padding: 1rem;
+    font-size: .85rem;
+    border-radius: 10px;
+}
+
+.preparation-h3{
+    margin: 0;
+    font-size: 1rem;
+}
+
+ul, ol{
+    margin: 0;
+    padding-left: inherit;
+}
+
+.bold{
+    font-weight: 600;
+    color: var(--color-stone-900);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.fact-label,
+.fact-value {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: .9rem;
+}
+
+.fact-label{
+    color: var(--color-stone-600);
+}
+
+.fact-value{
+    color: var(--color-brown-800);
+}
+
+.last {
+    border-bottom: none;
+}
