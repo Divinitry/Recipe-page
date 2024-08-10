@@ -17,7 +17,7 @@
 
 ### Links
 
-- Deployed Site: 
+- Deployed Site: https://divinitry.github.io/Recipe-page/
 
 ## My process
 
